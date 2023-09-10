@@ -1,0 +1,228 @@
+html , header{
+  background-color:#516CB0;
+   font-family:tahoma,sans-serif;
+}
+html ,body{
+  margin:0;
+  background-color:#57C7C5;
+}
+#header{
+  top:0%;
+  margin-top:0;
+  display: grid;
+  font-size: 1rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  position:fixed;
+  margin-top:0;
+  width:100%;
+}
+#nav-bar{
+  display:grid;
+  grid-auto-flow:column;
+  row-gap: 1.5rem;
+}
+
+
+a{
+text-decoration:none;
+color:white;
+}
+.logo{
+  padding:10px;
+  border-radius:50%;
+}
+
+.slogan{
+  padding-top:160px;
+  margin-bottom:10px;
+  font-size:29px;
+  color: rgba(249,208,81,255); 
+  text-align:center;
+  font-weight:bold;
+}
+fieldset {
+  margin:auto;
+  border: none;
+
+}
+.feature-1 img , .feature-3 img{
+  border-radius: 50%;
+}
+#feature, iframe, #pricing, #footer{
+  padding-top: 100px;
+}
+img {
+  height:90px;
+  loading: lazy;
+  padding-right:10px;
+}
+
+#email{
+  display:block;
+  width:75%;
+  max-width:196px;
+  height:26px;
+  justify-content:center;
+  margin:auto;
+}
+.submit{
+  display:block;
+  margin:10px auto;
+  margin-bottom:50px;
+  width:100px;
+  height:30px;
+  background-color:rgba(249,208,81,255);
+}
+#showcase-video, #feature{
+  display:flex;
+}
+iframe{
+  justify-content:center;
+  margin:10px auto;
+}
+.feature-list{
+  margin:auto;
+  justify-content:center;
+  list-style-type:none;
+  margin-bottom:20px;
+}
+ #feature{
+   max-width:800px;
+  margin:auto;
+  justify-content:center;
+  }
+li{
+  margin:20px;
+  display:flex;
+}
+#feature p{
+  padding-left:15px;
+}
+#pricing{
+   display:flex;
+   flex-wrap:wrap;
+   gap:10px;
+   justify-content:center;
+   padding-bottom:20px;
+   
+}
+
+.feature-title{
+   font-weight:bold;
+}
+h4{
+  font-size:20px;
+  align-items:top;
+  padding-top:10px;
+  text-align:center;
+  background-color:lightgrey;
+  padding-bottom:20px;
+  margin-bottom:-40px;
+  margin-top: 0px
+}
+.price{
+  font-size:18px;
+  padding:4px;
+}
+
+.Hiking-Backpack , .Laptop-Backpack{
+  width:400px;
+  height:430px;
+  font-size:12px;
+  border:1px solid black;
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.Hiking-Backpack p, .Laptop-Backpack p {
+  margin-bottom: -10px; 
+text-align:center;
+}
+
+h3{
+  text-align:center;
+}
+footer , footer a{
+  
+  display:grid;
+  grid-auto-flow:column;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  color:white;
+  background-color:black;
+}
+.contact-icons{
+  display:grid;
+  grid-auto-flow:column;
+  grid-auto-columns: 1fr;
+}
+@media (prefers-reduced-motion:no-preference){
+  html {
+    scroll-behavior:smooth;
+  }
+}
+.Hiking-Backpack p:first-of-type, .Laptop-Backpack p:first-of-type {
+  margin-top: 20px; 
+
+}
+
+@media only screen  and (max-width:480px){
+
+
+#header{
+  display: block;
+  justify-content:space-evenly;
+  align-items: center;
+}
+#feature, iframe, #pricing, #footer{
+  padding-top: 210px;
+}
+#nav-bar{
+  display:grid;
+  grid-auto-flow:row;
+  justify-items:center;
+  row-gap: 1rem;
+  padding-bottom:10px;
+}
+.logo{
+  display:block;
+  margin:auto;
+}
+body {
+  overflow-x: hidden;
+}
+li h4,li p {
+    margin-left: -55px;
+    text-align: center;
+
+  }
+
+  li img {
+    display: none;
+  }
+
+.slogan{
+  padding-top:250px;
+  margin-bottom:10px;
+  font-size:23px;
+  color: rgba(249,208,81,255); 
+  text-align:center;
+  font-weight:bold;
+}
+#pricing li p{
+  font-size:12px;
+  margin-bottom:-10px;
+}
+}
+@media only screen  and (max-width:255px){
+  #pricing p:not(:first-of-type,:last-of-type) {
+  display: none;
+  }
+  #pricing li:first-of-type {
+   padding:-70px;
+  }
+}
